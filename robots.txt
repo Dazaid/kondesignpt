@@ -1,0 +1,14 @@
+# Permitir a todos los crawlers acceder a todo el sitio
+User-agent: *
+Disallow:
+
+# Bloquear la carpeta /private/ de los crawlers
+User-agent: *
+Disallow: /private/
+
+# Permitir a Googlebot acceder a todo, pero bloquear /private/
+User-agent: Googlebot
+Disallow: /private/
+
+# Indicar la ubicación del Sitemap
+Sitemap: https://www.kondesign.ink/sitemap.xml
